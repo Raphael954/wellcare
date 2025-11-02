@@ -1,0 +1,118 @@
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+    background: linear-gradient(120deg, #e0f7fa 60%, #fffde4 100%);
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    color: #107ca7;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    height: 20vh;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid green;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background: #fff;
+}
+
+.service-card {
+    background: #fafafa;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(16,124,167,0.06);
+    width: 250px;
+    padding: 2rem 1rem 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(16,124,167,0.13);
+}
+
+.service-card img {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    color: #107ca7;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+.cta {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: linear-gradient(120deg, #fffde4 60%, #e0f7fa 100%);
+}
+
+.cta h2 {
+    color: #107ca7;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #107ca7;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.cta-btn:hover {
+    background: #0d5e7c;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+    }
+    .hero img {
+        width: auto;
+    }
+}

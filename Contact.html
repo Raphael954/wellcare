@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/ba6a4ac61c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="../General.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Care-Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Pics/logo.png" alt="">
+            <h1>Well Care</h1>
+        </div>
+        <nav class="nav-links">
+            <button class="nav_button"><a href="../Home.html">Home</a></button>
+            <button class="nav_button"><a href="Services.html">Services</a></button>
+            <button class="nav_button"><a href="About.html">About</a></button>
+            <button class="nav_button"><a href="Contact.html">Contact</a></button>
+            <button class="nav_button cta_button"><a href="Contact.html">Book Now</a></button>
+        </nav>    
+       <i class="fa-solid fa-angle-down"></i>
+       <i class="fa-solid fa-angle-up"></i>
+    </header>
+    
+    <aside>
+            <button class="nav_button"><a href="../Home.html">Home</a></button>
+            <button class="nav_button"><a href="Services.html">Services</a></button>
+            <button class="nav_button"><a href="About.html">About</a></button>
+            <button class="nav_button"><a href="Contact.html">Contact</a></button>
+            <button class="nav_button cta_button"><a href="Contact.html">Book Now</a></button>
+    </aside>
+    <main>
+        <main>
+    <section class="contact-form-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="mailto:abonyichimobi119@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="service">Service Type</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Nutrition Plans">Nutrition Plans</option>
+                <option value="Fitness Coaching">Fitness Coaching</option>
+                <option value="Therapy & Support">Therapy & Support</option>
+                <option value="Prescription Refills">Prescription Refills</option>
+                <option value="Virtual Appointments">Virtual Appointments</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="details">Service Details</label>
+            <textarea id="details" name="details" rows="4" placeholder="Tell us more about your needs" required></textarea>
+
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </section>
+
+    <section class="emergency-section">
+        <h3>Emergency?</h3>
+        <p>If you need urgent assistance, please call us immediately or use the emergency booking button below.</p>
+        <div class="emergency-contact">
+            <a href="tel:+2349161689028" class="emergency-phone">📞 +2349161689028</a>
+            <a href="tel:+2349161689028" class="emergency-btn">Book Emergency</a>
+        </div>
+    </section>
+</main>
+    </main>
+    <footer>
+        <div class="upper">
+            <div class="lowerlogo">
+                <img src="../Pics/logo.png" alt="">
+            </div>
+        </div>
+        <div class="lower">
+            <div class="socials">
+                <h4>You can get us On</h4>
+                <button><img src="../Pics/linkedin.svg" alt="Our Linkedin"><p id="LinkedIn">LinkedIn</p></button>
+                <button><img src="../Pics/instagram.svg" alt="Our Insta"><p>Instagram</p></button>
+            </div>
+            <div class="links">
+                <h4>Quick Links</h4>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../General.js"></script>
+</body>
+</html>

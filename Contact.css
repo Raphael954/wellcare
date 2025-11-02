@@ -1,0 +1,132 @@
+main {
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem 0;
+}
+
+.contact-form-section {
+    background: #fff;
+    max-width: 500px;
+    margin: 2rem auto 1.5rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(16,124,167,0.08);
+}
+
+.contact-form-section h2 {
+    color: #107ca7;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #107ca7;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0rem;
+    border: 1px solid #b2dfdb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    background: #f9f9f9;
+    transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #107ca7;
+    outline: none;
+}
+
+.send-btn {
+    width: 100%;
+    background: #107ca7;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+.send-btn:hover {
+    background: #0d5e7c;
+}
+
+.emergency-section {
+    background: #fffde4;
+    max-width: 500px;
+    margin: 1.5rem auto 0 auto;
+    padding: 1.5rem 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(255,221,174,0.08);
+    text-align: center;
+}
+
+.emergency-section h3 {
+    color: #d32f2f;
+    margin-bottom: 0.5rem;
+}
+
+.emergency-section p {
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+
+.emergency-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.emergency-phone {
+    color: #107ca7;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    background: #e0f7fa;
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    transition: background 0.2s;
+}
+
+.emergency-phone:hover {
+    background: #b2ebf2;
+}
+
+.emergency-btn {
+    display: inline-block;
+    background: #d32f2f;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.emergency-btn:hover {
+    background: #b71c1c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-form-section,
+    .emergency-section {
+        max-width: 90vw;
+        padding: 1rem 0.5rem;
+    }
+}
