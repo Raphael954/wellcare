@@ -1,0 +1,496 @@
+html{
+    font-size: 17px;
+}
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, #d9f1f0, #ffffff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+button{
+    cursor: pointer;
+}
+aside, .fa-angle-down, .fa-angle-up{
+    display: none;
+}
+aside *{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 15vh;
+    gap: 20rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 75%;
+    padding-left: 2%;
+    justify-content: start;
+    gap: 1rem;
+}
+.logo > img{
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid green;
+}
+h1{
+     font-family: "Roboto", sans-serif;
+     font-size: clamp(2rem, 2.5vw, 3rem);
+     color: rgb(0, 0, 0);
+}
+
+header > nav{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    width: 40%;
+    gap: 1rem;
+    height: 100%;
+}
+header .nav_button{
+    background-color:rgba(255, 255, 255, 0);
+    border: none;
+    height: 35%;
+    width: 20%;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    color: #000000;
+}
+.nav_button.cta_button{
+    margin-left: 2vw;
+    height: 50%;
+    width: 20rem;
+    font-size: clamp(1rem, 1.6vw, 1.5rem);
+    background-color: #04990c;
+    color: black;
+}
+button.cta_button :hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 2px 5px rgb(75, 73, 73);
+}
+button.cta_button :active{
+    background-color: #57555396;
+}
+
+button:hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 2px 5px rgb(75, 73, 73);
+}
+button:active{
+    background-color: #57555396;
+}
+a{text-decoration: none;
+    color: #000000;
+}
+
+.links a{
+    color: black;
+    text-decoration: underline;
+    margin-top: -2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 2.5rem);
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+    margin-top: 3vh;
+    background-color: #b9cfb7;
+    
+}
+.upper{
+    margin-top: 1vh;
+}
+
+.lowerlogo img{
+    height: 15vh;
+    width: auto;
+    border-radius: 50%;
+    border: 1px solid green;
+    margin-left: 2vw;
+}
+
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 70vw;
+}
+.socials{
+    margin-left: 2vw;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.socials img{
+    float: left;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+.socials button{
+    background: none;
+    border: none;
+    height: 50%;
+    width: 20%;
+}
+
+.socials button:hover{
+    transform: scale(1, 1);
+    box-shadow: 0px 0px 0px rgb(75, 73, 73);
+}
+.socials button:active{
+    background-color: #57555300;
+}
+
+.socials p{
+    width: 15vw;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 2.5rem);
+    margin-left: 2.5vw;
+    margin-top: 1vh;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+ h4{
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.3rem, 1.5vw, 2.5rem);
+    font-weight: 700;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+
+    header{
+        gap: 2rem;
+    }
+    h1{
+    font-size: clamp(3rem, 3.5vw, 4rem);
+    width: 50%;
+}
+   header nav{
+        display: none;
+    }
+    .logo{
+        width: 70%;
+    }
+    
+    .logo > img{
+        height: 90%;
+        width: auto;
+    }
+    .fa-angle-down{
+        display: block;
+        padding-right: 2rem;
+        margin-top: 0.5vh;
+        color: rgb(0, 0, 0);
+        animation: anglemove 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        z-index: 100;
+    }
+     .fa-angle-up{
+        display: none;
+        padding-right: 2rem;
+        margin-top: 0.5vh;
+        color: rgb(0, 0, 0);
+        animation: anglemove 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        z-index: 100;
+     }
+    @keyframes anglemove {
+       0% {transform: translateY(0);}
+       50%{transform: translateY(5px)}
+       100%{transform: translateY(0);}    
+    }
+    
+aside *{
+    display: block;
+}
+    aside {
+        position: fixed;
+        display: flex;
+        top: 0vh;
+        transform: translateY(-120vh);
+        transition: transform 0.5s;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 5rem;
+        height: 110vh;
+        padding-top: 10vh;
+        width: 100vw;
+        background-color: #2b2b2be3;
+        z-index: 99;
+    }
+    aside .nav_button{
+    background-color:rgb(16, 124, 167);
+    border: none;
+    height: 7%;
+    width: 40%;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    color: #EEEEEE;
+}
+aside .nav_button.cta_button{
+    height: 11%;
+    width: 50%;
+    font-size: clamp(3rem, 4vw, 4.5rem);
+    background-color: #FFDDAE;
+    color: black;
+}
+a{text-decoration: none;
+    color: #EEEEEE;
+}
+
+footer{
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.upper{
+    margin-top: 1vh;
+}
+
+.lowerlogo img{
+    height: 10vh;
+}
+
+.lower{
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1%;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+ .socials > h4, .links > h4{
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    width: 100%;
+    text-align: center;
+}
+ .links > h4{
+    margin-top: -5vh;
+    margin-bottom: -2vh;
+ }
+.socials{
+    width: 40%;
+}
+
+.socials img{
+    height: 70%;
+    width: 35%;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+.socials button{
+    height: 30%;
+    width: 100%;   
+}
+
+.socials p{
+    width: 90%;
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    text-align: center;
+}
+.socials p#LinkedIn{
+    margin-top: 2vh;
+}
+
+.links a{
+    color: black;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(2rem, 2vw, 2.5rem);  
+}
+
+
+.links{
+    height: 30vh;
+    width: 60%;
+    gap: 7vh;
+    margin-left: 2%;
+}
+
+
+}
+
+@media (max-width: 599px) {
+    
+    header{
+        gap: 2rem;
+    }
+    h1{
+         font-size: clamp(1.6rem, 2.5vw, 3rem);
+    }
+    header nav{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo > img{
+        height: 90%;
+        width: auto;
+    }
+    .fa-angle-down{
+        display: block;
+        padding-right: 2rem;
+        margin-top: 0.5vh;
+        color: rgb(0, 0, 0);
+        animation: anglemove 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        z-index: 100;
+    }
+     .fa-angle-up{
+        display: none;
+        padding-right: 2rem;
+        margin-top: 0.5vh;
+        color: rgb(0, 0, 0);
+        animation: anglemove 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        z-index: 100;
+     }
+    @keyframes anglemove {
+       0% {transform: translateY(0);}
+       50%{transform: translateY(5px)}
+       100%{transform: translateY(0);}    
+    }
+
+aside *{
+    display: block;
+}
+    aside {
+        position: fixed;
+        display: flex;
+        top: 0vh;
+        transform: translateY(-120vh);
+        transition: transform 0.5s;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 3rem;
+        height: 110vh;
+        padding-top: 10vh;
+        width: 100vw;
+        background-color: #2b2b2be3;
+        z-index: 99;
+    }
+    aside .nav_button{
+    background-color:rgb(16, 124, 167);
+    border: none;
+    height: 7%;
+    width: 40%;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    color: #EEEEEE;
+}
+aside .nav_button.cta_button{
+    height: 11%;
+    width: 50%;
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    background-color: #FFDDAE;
+    color: black;
+}
+a{text-decoration: none;
+    color: #EEEEEE;
+}
+
+footer{
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.upper{
+    margin-top: 1vh;
+}
+
+.lowerlogo img{
+    height: 10vh;
+}
+
+.lower{
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1vw;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+ .socials h4, .links h4{
+    font-size: clamp(0.8rem, 1.2vw, 2.5rem);
+    width: 35vw;
+    text-align: center;
+}
+
+.socials{
+    width: 45%;
+}
+
+.socials img{
+    height: 70%;
+    width: 25%;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+.socials button{
+    height: 30%;
+    width: 100%;   
+}
+
+.socials p{
+    width: 90%;
+    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
+    text-align: center;
+}
+.socials p#LinkedIn{
+    margin-top: 2vh;
+}
+
+.links a{
+    color: black;
+    text-decoration: underline;
+    margin-top: -2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 2.5rem);  
+}
+
+
+.links{
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+}
+
+
+}
